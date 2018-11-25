@@ -1,3 +1,5 @@
+---
+---
 /*
  *  __                  __
  * /\ \                /\ \
@@ -24,12 +26,18 @@
  * Themes
  */
 
+$theme-color: #90a959;
 
+a {
+  text-decoration: none;
+}
 /*
  * Global resets
  *
  * Update the foundational and global aspects of the page.
  */
+
+@import url("https://fonts.googleapis.com/css?family=Changa:800");
 
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -58,7 +66,11 @@ html {
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
+  background-image: url('steve-halama-698056-unsplash.jpg');
+  background-size: 100% auto;
+  background-position: right 70%;
 }
+
 @media (min-width: 48em) {
   .sidebar {
     position: fixed;
@@ -67,19 +79,26 @@ html {
     bottom: 0;
     width: 18rem;
     text-align: left;
+    background-size: auto 100%;
+    background-position: 0 0;
   }
 }
 
 /* Sidebar links */
 .sidebar a {
   color: #fff;
+  text-shadow: 0px 0px 10px #000000;
+
+  &:hover {
+    color: $theme-color;
+  }
 }
 
 /* About section */
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: "Changa", sans-serif;
   font-size: 3.25rem;
 }
 
@@ -91,7 +110,10 @@ html {
   display: block;
   line-height: 1.75;
 }
-a.sidebar-nav-item:hover,
+a.sidebar-nav-item:hover {
+  text-decoration: none;
+
+}
 a.sidebar-nav-item:focus {
   text-decoration: underline;
 }
