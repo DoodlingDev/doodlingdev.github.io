@@ -33,7 +33,7 @@
     "position": "Software Developer",
     "highlights": [
       "The Digital Product Innovation team has a varied portfolio of applications under the UL software umbrella, including modern re-platforming of legacy engineering applications and multi-million dollar revenue generating customer facing applications.",
-"As a front-end specialist, I facilitate code quality guidelines and style guides as well as their practical application, participate in high-level architecture creation of new projects, see to it that company-wide design and UI\UX standards are correctly implemented, maintain and oversee relevant component libraries, and mentor those developers on the team whose skills in our front end stack have not yet matured.",
+"As a front-end specialist, I facilitate code quality guidelines and style guides as well as their practical application, participate in high-level architecture creation of new projects, see to it that company-wide design and UI\\UX standards are correctly implemented, maintain and oversee relevant component libraries, and mentor those developers on the team whose skills in our front end stack have not yet matured.",
 "As a new team in the UL structure, when I joined, many process guidelines did not yet exist. I was instrumental in bringing agile practices to the engineering process, as well as our collaborative efforts with business partners."
     ]
   },{
@@ -57,9 +57,8 @@
     "title": "Git Commit Messages to the rescue!",
     "date": "October '18",
     "organization": "Dev Together",
-    "summary": "The humble commit message, so often overlooked and yet so powerful and always",
-   "The humble commit message, so often overlooked and yet so powerful and always ready to lend a hand. More than just 'commit -m' it's about context and documentation, and can save you boatloads of frustration and time when used to the fullest.",
-    "url": "[Video](https://www.youtube.com/watch?v=TBxl0gFCXgM&feature=youtu.be)"
+    "summary": "The humble commit message, so often overlooked and yet so powerful and always ready to lend a hand. More than just 'commit -m' it's about context and documentation, and can save you boatloads of frustration and time when used to the fullest.",
+    "url": "https://www.youtube.com/watch?v=TBxl0gFCXgM&feature=youtu.be"
   }, {
     "title": "How Open Source and the Chicago Cubs won the World Series",
     "date": "2017",
