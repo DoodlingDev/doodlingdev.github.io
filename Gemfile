@@ -11,3 +11,4 @@ gem "jekyll", "~> 3.8"
 gem "jekyll-paginate", "~> 1.1"
 
 gem "redcarpet", "~> 3.4"
+gem "rouge"

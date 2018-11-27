@@ -62,6 +62,7 @@ DEPENDENCIES
   jekyll (~> 3.8)
   jekyll-paginate (~> 1.1)
   redcarpet (~> 3.4)
+  rouge
 
 BUNDLED WITH
    1.16.5

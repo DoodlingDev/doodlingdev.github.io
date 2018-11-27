@@ -3,10 +3,9 @@
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
-          {{ site.title }}
+          Doodling Dev
         </a>
       </h1>
-      <p class="lead">{{ site.description }}</p>
     </div>
 
     <nav class="sidebar-nav">
@@ -26,8 +25,8 @@
         {% endif %}
       {% endfor %}
 
+      <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
