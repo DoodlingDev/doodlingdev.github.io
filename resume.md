@@ -9,30 +9,30 @@ title: Resume
 ### Christopher "Aji" Slater
 #### aji (dot) slater (at) gmail
 
-> Design-driven developer, mentor and speaker who writes thoroughly tested and friendly to use front-end code. React specialist, shares knowledge and expertise to make efficient, effective react and react testing more attainable to the community. Vim aficionado, fan of the oxford comma.
+> Design-driven developer, mentor and speaker who writes thoroughly tested and friendly to use front-end code. React specialist, shares knowledge and expertise to make efficient, effective react and react testing more attainable to the community. Vim aficionado, fan of the Oxford comma.
 
 # Experience
 
-### 20 Spokes
-#### Software Developer
+## 20 Spokes
+### Software Developer
 
-* Used React Native for its speed-to-market and cross platform qualities, developed mobile applications from the ground up for clients. Typically architect-ed as Ruby on Rails backed API services to support the client application.
+* Used React Native for its speed-to-market and cross-platform qualities, developed mobile applications from the ground up for clients. Typically architect-ed as Ruby on Rails backed API services to support the client application.
 
-* Embedded with software teams to develop and improve front-end React web applications. Often took the form of designing and implementing new features or increasing and stabilizing test coverage.
+* Embedded with software teams to develop and improve front-end React web applications. Often took the form of designing and implementing new features, large-scale refactoring, or increasing and stabilizing test coverage.
 
 * Wrote & published first application to the app store w/in first 4 weeks.
 
-### UL, llc
-#### Software Developer
+## UL, llc
+### Software Developer
 
-* The Digital Product Innovation team has a varied portfolio of applications under the UL software umbrella, including modern re-platforming of legacy engineering applications and multi-million dollar revenue generating customer facing applications.
+* The Digital Product Innovation team has a varied portfolio of applications under the UL software umbrella, including modern re-platforming of legacy engineering applications and multi-million dollar revenue generating customer-facing applications.
 
 * As a front-end specialist, I facilitate code quality guidelines and style guides as well as their practical application, participate in high-level architecture creation of new projects, see to it that company-wide design and UI\UX standards are correctly implemented, maintain and oversee relevant component libraries, and mentor those developers on the team whose skills in our front end stack have not yet matured.
 
 * As a new team in the UL structure, when I joined, many process guidelines did not yet exist. I was instrumental in bringing agile practices to the engineering process, as well as our collaborative efforts with business partners.
 
-### Dev Bootcamp
-#### Mentor and remote Teaching Assistant
+## Dev Bootcamp
+### Mentor and remote Teaching Assistant
 
 * The Dev Bootcamp program began with 9 weeks of remote learning (known as Phase 0) to build strong fundamentals in the languages and skills that will be utilized in the on-site intensive coursework.
 
