@@ -4,7 +4,7 @@
  <title>Doodling Dev Blog</title>
  <link href="https://doodlingdev.com/atom.xml" rel="self"/>
  <link href="https://doodlingdev.com/"/>
- <updated>2018-11-27T15:41:24-06:00</updated>
+ <updated>2018-11-27T18:28:59-06:00</updated>
  <id>https://doodlingdev.com</id>
  <author>
    <name>Aji Slater</name>
@@ -33,16 +33,7 @@
    <link href="https://doodlingdev.com/2012/02/06/whats-jekyll/"/>
    <updated>2012-02-06T00:00:00-06:00</updated>
    <id>https://doodlingdev.com/2012/02/06/whats-jekyll</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project&amp;#39;s readme&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It&amp;#39;s an immensely useful tool and one we encourage you to use here with Hyde.&lt;/p&gt;
-
-&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
-</content>
+   <content type="html"></content>
  </entry>
  
 
