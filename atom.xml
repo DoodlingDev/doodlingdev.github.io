@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Doodling Dev Blog</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2018-12-04T15:42:45-08:00</updated>
- <id>http://localhost:4000</id>
+ <link href="https://doodlingdev.com/atom.xml" rel="self"/>
+ <link href="https://doodlingdev.com/"/>
+ <updated>2018-12-04T15:54:14-08:00</updated>
+ <id>https://doodlingdev.com</id>
  <author>
    <name>Aji Slater</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>You can't test React Native like you test React on the web</title>
-   <link href="http://localhost:4000/2018/12/04/react-native-testing-with-test-renderer/"/>
+   <link href="https://doodlingdev.com/2018/12/04/react-native-testing-with-test-renderer/"/>
    <updated>2018-12-04T00:00:00-08:00</updated>
-   <id>http://localhost:4000/2018/12/04/react-native-testing-with-test-renderer</id>
+   <id>https://doodlingdev.com/2018/12/04/react-native-testing-with-test-renderer</id>
    <content type="html">&lt;p&gt;When the DOM you&amp;#39;re rendering into is the familiar DOM of the browser, there&amp;#39;s a whole world of tooling and capability for mocking the environment.&lt;/p&gt;
 
 &lt;p&gt;With React Native? Not so much.&lt;/p&gt;
