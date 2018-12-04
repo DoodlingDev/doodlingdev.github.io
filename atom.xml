@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Doodling Dev Blog</title>
- <link href="https://doodlingdev.com/atom.xml" rel="self"/>
- <link href="https://doodlingdev.com/"/>
- <updated>2018-11-27T18:28:59-06:00</updated>
- <id>https://doodlingdev.com</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2018-12-04T15:42:45-08:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>Aji Slater</name>
    <email></email>
@@ -13,27 +13,48 @@
 
  
  <entry>
-   <title>Introducing Hyde</title>
-   <link href="https://doodlingdev.com/2013/12/28/introducing-hyde/"/>
-   <updated>2013-12-28T00:00:00-06:00</updated>
-   <id>https://doodlingdev.com/2013/12/28/introducing-hyde</id>
-   <content type="html"></content>
- </entry>
- 
- <entry>
-   <title>Example content</title>
-   <link href="https://doodlingdev.com/2012/02/07/example-content/"/>
-   <updated>2012-02-07T00:00:00-06:00</updated>
-   <id>https://doodlingdev.com/2012/02/07/example-content</id>
-   <content type="html"></content>
- </entry>
- 
- <entry>
-   <title>What's Jekyll?</title>
-   <link href="https://doodlingdev.com/2012/02/06/whats-jekyll/"/>
-   <updated>2012-02-06T00:00:00-06:00</updated>
-   <id>https://doodlingdev.com/2012/02/06/whats-jekyll</id>
-   <content type="html"></content>
+   <title>You can't test React Native like you test React on the web</title>
+   <link href="http://localhost:4000/2018/12/04/react-native-testing-with-test-renderer/"/>
+   <updated>2018-12-04T00:00:00-08:00</updated>
+   <id>http://localhost:4000/2018/12/04/react-native-testing-with-test-renderer</id>
+   <content type="html">&lt;p&gt;When the DOM you&amp;#39;re rendering into is the familiar DOM of the browser, there&amp;#39;s a whole world of tooling and capability for mocking the environment.&lt;/p&gt;
+
+&lt;p&gt;With React Native? Not so much.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;We can use Enzyme, but we&amp;#39;re pretty limited to shallow rendering. That gives a modicum of usefulness, but a large part of the testing we want requires mounting the component in a mock DOM. With AirBnB famously migrating away from React Native, I don&amp;#39;t think there will be a lot of focus on making Enzyme more friendly to use for the mobile React world.&lt;/p&gt;
+
+&lt;p&gt;What I see most often for React Native test coverage is trying to do everything needed with snapshot testing. Trying to match snapshots with different state, maybe throwing in a different prop and seeing how that changes the markup.&lt;/p&gt;
+
+&lt;p&gt;Snapshot testing isn&amp;#39;t intended to be used as full-fledged unit tests, that creates problems of its own...&lt;/p&gt;
+
+&lt;h3&gt;Small changes take disproportionate attention&lt;/h3&gt;
+
+&lt;p&gt;If we change some text in an element, odds are we don&amp;#39;t want that to cause a test failure. Updating a snapshot feels like it takes no time at all, but if we&amp;#39;re testing behavior with multiple snapshots, likely that one insignificant change caused the whole component&amp;#39;s suite to fail.&lt;/p&gt;
+
+&lt;h3&gt;Human verifiable means unreliable&lt;/h3&gt;
+
+&lt;p&gt;It&amp;#39;s not always clear what we should be looking for when updating snapshots. If it&amp;#39;s something written by another dev, it&amp;#39;s almost impossible to know if we should accept the diff.&lt;/p&gt;
+
+&lt;p&gt;The imperative plea to &lt;em&gt;&amp;quot;use descriptive titles when writing snapshots&amp;quot;&lt;/em&gt; is direct fallout from this lack of clarity. Naming matters, but if we rely on a human being to correctly &lt;em&gt;interpret&lt;/em&gt; the name of the test to decide whether it passed or failed... we&amp;#39;ve missed the point of automated testing.&lt;/p&gt;
+
+&lt;h3&gt;Snapshots test inconsequential markup&lt;/h3&gt;
+
+&lt;p&gt;Test only the parts of your component that are absolutely vital. Is there supposed to be text and a continue button? Assert on the presence of these things that actually matter. Constant snapshot failures and large diffs in markup that don&amp;#39;t impact a component&amp;#39;s functionality are just noise.&lt;/p&gt;
+
+&lt;h3&gt;Interfaces go untested&lt;/h3&gt;
+
+&lt;p&gt;Interfaces with other components, modules or libraries aren&amp;#39;t going to show up in a snapshot. A test suite should warn us when components are getting out of sync with their messaging. Those are the kind of bugs don&amp;#39;t always throw errors and cost too much time and effort to track down and fix.&lt;/p&gt;
+
+&lt;p&gt;All these reasons are why we might reach for something like enzyme in the first place, but without mounting in the environment of the browser (that enzyme was built for), it falls short.&lt;/p&gt;
+
+&lt;h2&gt;What tools can we use?&lt;/h2&gt;
+
+&lt;p&gt;Part of the main React project is &lt;code&gt;react-test-renderer&lt;/code&gt;. The part of React&amp;#39;s testing suite that builds the serializable representation of our component tree. It&amp;#39;s what we call &lt;code&gt;.toJSON()&lt;/code&gt; on to match snapshots.&lt;/p&gt;
+
+&lt;p&gt;In my next post, I&amp;#39;ll go through some examples of how to leverage React&amp;#39;s built in testing tools to get the kind of functionality we need to properly test React Native applications.&lt;/p&gt;
+</content>
  </entry>
  
 
