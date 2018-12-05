@@ -14,6 +14,11 @@
 a {
   text-decoration: none; }
 
+.homepage-excerpt-link {
+  display: block;
+  width: 100%;
+  text-align: center; }
+
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif; }
 
@@ -99,3 +104,9 @@ html {
 
 .related-posts li a:hover {
   color: #90a959; }
+
+html {
+  visibility: visible;
+  opacity: 1; }
+
+/*# sourceMappingURL=hyde.css.map */
