@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      You can't test React Native like you test React Web &middot; Doodling Dev Blog
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-0b">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Doodling Dev
+        </a>
+      </h1>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/resume/">Resume</a>
+          
+        
+      
+
+      <p>&copy; 2018. All rights reserved.</p>
+    </nav>
+
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">You can't test React Native like you test React Web</h1>
+  <span class="post-date">04 Dec 2018</span>
+  <p>When the DOM you&#39;re rendering into is the familiar DOM of the browser, there&#39;s a whole world of tooling and capability for mocking the environment.</p>
+
+<p>With React Native? Not so much.</p>
+
+<!--more-->
+
+<p>We can use Enzyme, but we&#39;re pretty limited to shallow rendering. That gives a modicum of usefulness, but a large part of the testing we want requires mounting the component in a mock DOM. With AirBnB famously migrating away from React Native, I don&#39;t think there will be a lot of focus on making Enzyme more friendly to use for the mobile React world.</p>
+
+<p>What I see most often for React Native test coverage is trying to do everything needed with snapshot testing. Trying to match snapshots with different state, maybe throwing in a different prop and seeing how that changes the markup.</p>
+
+<p>Snapshot testing isn&#39;t intended to be used as full-fledged unit tests, that creates problems of its own...</p>
+
+<h3>Small changes take disproportionate attention</h3>
+
+<p>If we change some text in an element, odds are we don&#39;t want that to cause a test failure. Updating a snapshot feels like it takes no time at all, but if we&#39;re testing behavior with multiple snapshots, likely that one insignificant change caused the whole component&#39;s suite to fail.</p>
+
+<h3>Human verifiable means unreliable</h3>
+
+<p>It&#39;s not always clear what we should be looking for when updating snapshots. If it&#39;s something written by another dev, it&#39;s almost impossible to know if we should accept the diff.</p>
+
+<p>The imperative plea to <em>&quot;use descriptive titles when writing snapshots&quot;</em> is direct fallout from this lack of clarity. Naming matters, but if we rely on a human being to correctly <em>interpret</em> the name of the test to decide whether it passed or failed... we&#39;ve missed the point of automated testing.</p>
+
+<h3>Snapshots test inconsequential markup</h3>
+
+<p>Test only the parts of your component that are absolutely vital. Is there supposed to be text and a continue button? Assert on the presence of these things that actually matter. Constant snapshot failures and large diffs in markup that don&#39;t impact a component&#39;s functionality are just noise.</p>
+
+<h3>Interfaces go untested</h3>
+
+<p>Interfaces with other components, modules or libraries aren&#39;t going to show up in a snapshot. A test suite should warn us when components are getting out of sync with their messaging. Those are the kind of bugs don&#39;t always throw errors and cost too much time and effort to track down and fix.</p>
+
+<p>All these reasons are why we might reach for something like enzyme in the first place, but without mounting in the environment of the browser (that enzyme was built for), it falls short.</p>
+
+<h3>What tools can we use?</h3>
+
+<p>Part of the main React project is <code>react-test-renderer</code>. The part of React&#39;s testing suite that builds the serializable representation of our component tree. It&#39;s what we call <code>.toJSON()</code> on to match snapshots.</p>
+
+<p>In my next post, I&#39;ll go through some examples of how to leverage React&#39;s built in testing tools to get the kind of functionality we need to properly test React Native applications.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>

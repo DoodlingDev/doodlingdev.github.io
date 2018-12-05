@@ -4,7 +4,7 @@
  <title>Doodling Dev Blog</title>
  <link href="https://doodlingdev.com/atom.xml" rel="self"/>
  <link href="https://doodlingdev.com/"/>
- <updated>2018-12-04T16:19:26-08:00</updated>
+ <updated>2018-12-04T15:54:14-08:00</updated>
  <id>https://doodlingdev.com</id>
  <author>
    <name>Aji Slater</name>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title>You can't test React Native like you test React Web</title>
-   <link href="https://doodlingdev.com/2018/12/04/you-cant-test-react-native-like-you-test-react-web/"/>
+   <title>You can't test React Native like you test React on the web</title>
+   <link href="https://doodlingdev.com/2018/12/04/react-native-testing-with-test-renderer/"/>
    <updated>2018-12-04T00:00:00-08:00</updated>
-   <id>https://doodlingdev.com/2018/12/04/you-cant-test-react-native-like-you-test-react-web</id>
+   <id>https://doodlingdev.com/2018/12/04/react-native-testing-with-test-renderer</id>
    <content type="html">&lt;p&gt;When the DOM you&amp;#39;re rendering into is the familiar DOM of the browser, there&amp;#39;s a whole world of tooling and capability for mocking the environment.&lt;/p&gt;
 
 &lt;p&gt;With React Native? Not so much.&lt;/p&gt;
@@ -49,7 +49,7 @@
 
 &lt;p&gt;All these reasons are why we might reach for something like enzyme in the first place, but without mounting in the environment of the browser (that enzyme was built for), it falls short.&lt;/p&gt;
 
-&lt;h3&gt;What tools can we use?&lt;/h3&gt;
+&lt;h2&gt;What tools can we use?&lt;/h2&gt;
 
 &lt;p&gt;Part of the main React project is &lt;code&gt;react-test-renderer&lt;/code&gt;. The part of React&amp;#39;s testing suite that builds the serializable representation of our component tree. It&amp;#39;s what we call &lt;code&gt;.toJSON()&lt;/code&gt; on to match snapshots.&lt;/p&gt;
 

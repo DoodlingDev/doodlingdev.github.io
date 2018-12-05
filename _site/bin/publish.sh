@@ -8,11 +8,6 @@ cp -r _site ../temp
 
 git checkout master
 
-if [ $? -ne 0 ]; then
-  echo "checkout to master failed. aborting."
-  exit
-fi
-
 trash ./**
 
 mv ../temp/_site/** .
