@@ -1,7 +1,14 @@
-/* Resume page */
+/* Hide title */
 @import url("https://fonts.googleapis.com/css?family=Changa:800");
-.Resume > .page-title {
+.Resume > .page-title,
+.About > .page-title {
   display: none; }
+
+/* About */
+.About .page-title + h1 {
+  margin-bottom: 1.5rem; }
+
+/* Resume page */
 .Resume h1 {
   margin-top: 3rem; }
 .Resume h2 + h3,
