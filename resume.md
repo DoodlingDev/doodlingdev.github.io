@@ -3,7 +3,7 @@ layout: page
 title: Resume
 ---
 
-[Wouldn't you rather download this as a nice, easy to read pdf?](/resume.pdf)
+[Wouldn't you rather download this as a nice, easy to read pdf?](/aji-slater-resume.pdf)
 [Or maybe in resume.json](/resume.json) [format?](https://jsonresume.org/)
 
 ### Christopher "Aji" Slater
